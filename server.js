@@ -3,6 +3,7 @@ app = express();
 port = process.env.PORT || 4400;
 const mongoose = require('mongoose');
 const User =require('./api/models/TestModel');
+const Login = require('./api/models/LoginModel');
 const bodyParser = require('body-parser');
 
 mongoose.Promise=global.Promise;

@@ -6,6 +6,7 @@
 
 module.exports = function(app) {
     var User_Actions = require('../controllers/TestController');
+    var LoginActions = require('../controllers/LoginController')
   
     // todoList Routes
     app.route('/users')
@@ -17,8 +18,7 @@ module.exports = function(app) {
   
     app.route('/usersN/:user_name')
     .get(User_Actions.delete_user_byName);
-    // app.route('/tasks/:taskId')
-    //   .get(todoList.read_a_task)
-    //   .put(todoList.update_a_task)
-    //   .delete(todoList.delete_a_task);
+    
+    app.route('/user/Login')
+    .post(LoginActions.Add_Login);
   };
