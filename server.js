@@ -23,4 +23,5 @@ routes(app);
 
 
 app.listen(port);
+console.log(process.env.PORT);
 console.log("Port"+port);
